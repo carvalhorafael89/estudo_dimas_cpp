@@ -1,71 +1,78 @@
 #include "Pessoa.h"
+#include <QString>
 
-void Pessoa::setcidade(System::String^ cidade)
+Pessoa::Pessoa(QString cpf, QString nome)
 {
-	this->cidade = cidade;
+    this->cpf = cpf;
+    this->nome = nome;
 }
 
-void Pessoa::setuf(System::String^ uf)
+void Pessoa::setcidade(QString cidade)
+{
+    this->cidade = cidade;
+}
+
+void Pessoa::setuf(QString uf)
 {
 	this->uf = uf;
 }
 
-void Pessoa::setcep(System::String^ cep)
+void Pessoa::setcep(QString cep)
 {
 	this->cep = cep;
 }
 
-void Pessoa::setddd(System::String^ ddd)
+void Pessoa::setddd(QString ddd)
 {
 	this->ddd = ddd;
 }
 
-void Pessoa::settelefone(System::String^ telefone)
+void Pessoa::settelefone(QString telefone)
 {
 	this->telefone = telefone;
 }
 
-void Pessoa::setendereco(System::String^ endereco)
+void Pessoa::setendereco(QString endereco)
 {
 	this->endereco = endereco;
 }
 
-System::String^ Pessoa::getcpf()
+QString Pessoa::getcpf()
 {
 	return cpf;
 }
 
-System::String^ Pessoa::getnome()
+QString Pessoa::getnome()
 {
 	return nome;
 }
 
-System::String^ Pessoa::getendereco()
+QString Pessoa::getendereco()
 {
 	return endereco;
 }
 
-System::String^ Pessoa::getcidade()
+QString Pessoa::getcidade()
 {
-	return cidade;
+    return cidade;
 }
 
-System::String^ Pessoa::getuf()
+QString Pessoa::getuf()
 {
 	return uf;
 }
 
-System::String^ Pessoa::getcep()
+QString Pessoa::getcep()
 {
 	return cep;
 }
 
-System::String^ Pessoa::getddd()
+QString Pessoa::getddd()
 {
 	return ddd;
 }
 
-System::String^ Pessoa::gettelefone()
+QString Pessoa::gettelefone()
 {
 	return telefone;
 }

@@ -24,6 +24,10 @@ private slots:
 
     void on_actionbotao_sair_triggered();
 
+    void on_actionbotao_alterar_triggered();
+
+    void limpar_pesquisa();
+
 private:
     Ui::menu_produto *ui;
 };

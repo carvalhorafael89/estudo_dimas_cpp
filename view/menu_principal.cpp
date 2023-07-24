@@ -28,3 +28,10 @@ void menu_principal::on_actionProdutos_triggered()
     janelaprod.show();
     this->destroy();
 }
+
+void menu_principal::on_actionClientes_triggered()
+{
+    janelacliente.show();
+    this->destroy();
+}
+

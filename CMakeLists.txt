@@ -17,28 +17,33 @@ find_package(Qt6Sql REQUIRED)
 set(PROJECT_SOURCES
     #headers
     model/Produto.h
-    #model/Cliente.h
-    #model/Pessoa.h
+    model/Cliente.h
+    model/Pessoa.h
     #model/Vendedor.h
     view/menu_produto.h
     view/menu_principal.h
+    view/menu_cliente.h
     control/daoproduto.h
+    control/daocliente.h
     control/conexao.h
 #----------------------------#
     #sources
     model/Produto.cpp
-    #model/Cliente.cpp
-    #model/Pessoa.cpp
+    model/Cliente.cpp
+    model/Pessoa.cpp
     #model/Vendedor.cpp
     view/menu_produto.cpp
     view/menu_principal.cpp
+    view/menu_cliente.cpp
     control/conexao.cpp
     control/daoproduto.cpp
+    control/daocliente.cpp
     main.cpp
 #----------------------------#
     #.ui (forms)
     view/menu_principal.ui
     view/menu_produto.ui
+    view/menu_cliente.ui
 
 )
 

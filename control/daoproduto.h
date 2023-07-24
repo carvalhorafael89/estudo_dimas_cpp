@@ -7,7 +7,7 @@ private:
 
 
 public:
-    daoproduto() {};
+    daoproduto() {}
     Produto* consultar(QString codigo);
     bool incluir(Produto produto);
     bool alterar(Produto produto);

@@ -2,6 +2,10 @@
 #include "conexao.h"
 //#include <QMessageBox>
 
+conectarsql::conectarsql()
+{
+    QSqlDatabase db;
+}
 
 void conectarsql::iniconexao()
 {

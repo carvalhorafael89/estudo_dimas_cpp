@@ -8,7 +8,7 @@ private:
 
 public:
     //construtor
-    conectarsql() {}
+    conectarsql();
 
     void iniconexao();
     void fecharconexao();

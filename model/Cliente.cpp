@@ -1,26 +1,32 @@
 #include "Cliente.h"
 
-using namespace std;
+Cliente::Cliente(QString cpf, QString nome, double limitecred)
+    : Pessoa(cpf, nome) // Chama o construtor da classe Pessoa com os parâmetros cpf e nome
+{
+    this->limitecred = limitecred;
+    this->limitedisp = limitecred;
+}
 
-System::Double^ Cliente::getlimitecred()
+double Cliente::getlimitecred()
 {
 	return limitecred;
 }
 
-System::Double^ Cliente::getlimitedisp()
+double Cliente::getlimitedisp()
 {
 	return limitedisp;
 }
 
-void Cliente::setlimitecred(System::Double^ limitecred)
+void Cliente::setlimitecred(double limitecred)
 {
-	this->limitecred = limitecred;
+    this->limitecred = limitecred;
 }
 
-void Cliente::setlimitedisp(System::Double^ limitedisp)
+void Cliente::setlimitedisp(double limitedisp)
 {
 	this->limitedisp = limitedisp;
 }
+
 
 /*
 void Cliente::addpedido(Pedido pedido)

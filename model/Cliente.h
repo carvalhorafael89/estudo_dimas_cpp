@@ -11,13 +11,9 @@ private:
 
 public:
 	//construtor
-    Cliente(QString cpf, QString nome, double limitecred)
-	{
-		this->limitecred = limitecred;
-		this->limitedisp = limitecred;
-
-    }
-
+    //Cliente();
+    Cliente(QString cpf, QString nome, double limitecred);
+    //métodos
     double getlimitecred();
     double getlimitedisp();
     void setlimitecred(double limitecred);

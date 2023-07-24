@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 #include <QString>
 
 class Pessoa
@@ -15,10 +14,12 @@ private:
     QString telefone;
 
 public:
-	//constructor padrão
-	Pessoa(){};
+    //constructor padrao
+    //Pessoa(){}
+
 	//construtor da classe Pessoa
-    Pessoa(QString cpf, QString nome) {};
+    Pessoa(QString cpf, QString nome);
+
 	//setters
     void setendereco(QString endereco);
     void setcidade(QString cidade);
@@ -26,6 +27,7 @@ public:
     void setcep(QString cep);
     void setddd(QString ddd);
     void settelefone(QString telefone);
+
 	//getters
     QString getcpf();
     QString getnome();

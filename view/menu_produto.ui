@@ -297,6 +297,11 @@
     <string>botao_sair</string>
    </property>
   </action>
+  <action name="actionbotao_alterar">
+   <property name="text">
+    <string>botao_alterar</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections>
@@ -340,6 +345,22 @@
    <hints>
     <hint type="sourcelabel">
      <x>663</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnalterar</sender>
+   <signal>clicked()</signal>
+   <receiver>actionbotao_alterar</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>385</x>
      <y>224</y>
     </hint>
     <hint type="destinationlabel">
